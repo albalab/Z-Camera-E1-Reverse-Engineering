@@ -27,11 +27,13 @@ This patch is designed for firmware version 0.31. The memory addresses used are 
 ## Compatibility
 
 - Firmware version: 0.31
-- Can be combined with other patches (e.g., HDMI color space fix, bitrate patches)
+- Can be combined with other patches (e.g., bitrate patches)
+- **Compatible with "HDMI color space fix" patch** - These patches work well together to provide both UI output and proper color space on HDMI
 
 ## Troubleshooting
 
 If the UI doesn't appear on HDMI:
 - Ensure your HDMI cable is properly connected before powering on the camera
-- Try combining this patch with the "HDMI color space fix" patch
+- **Recommended:** Combine this patch with the "HDMI color space fix" patch for best results
 - Check that your HDMI monitor supports the camera's output resolution
+- If combining multiple patches, ensure the HDMI color space fix lines are included in your combined autoexec.ash file
